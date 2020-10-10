@@ -1,0 +1,27 @@
+@import "../base/fonts";
+@import "../base/colors";
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  flex-direction: column;
+  margin-left: 5px;
+  & > img{
+   width: 120px;
+   z-index: 5;
+  }
+}
+
+#logo > img.open{
+  width: 60%;
+  margin: 0 auto;
+  transform: translate(-5%, 25%);
+  // transition: transform .8s, margin .2s ease-in;
+}
+
+@media screen and (min-width: 1000px){
+  #logo{
+    margin-left: 50px;
+  }
+}

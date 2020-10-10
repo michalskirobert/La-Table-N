@@ -1,0 +1,47 @@
+@import "./../base/colors";
+
+.landing {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../images/hero/header-banner.jpg");
+  padding: 0rem 5rem;
+}
+
+#about,
+#contact,
+.landing {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transform: skew(0deg, -10deg) translateY(-120px);
+}
+
+.index-text{
+  transform: skew(0deg, 10deg);
+}
+
+#about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../images/hero/header-banner-3.jpg");
+}
+
+#contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../images/hero/header-banner-4.jpg");
+}
+
+@media screen and (max-width: 600px), (max-width: 1000px) {
+  .landing,
+  #about,
+  #contact {
+    background-attachment: scroll;
+  }
+}
+@supports (-webkit-touch-callout: none) {
+  .landing,
+  #about,
+  #contact {
+    background-attachment: scroll;
+  }
+}

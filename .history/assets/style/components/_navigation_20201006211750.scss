@@ -1,0 +1,138 @@
+@import "./../base/fonts";
+@import "./../base/colors";
+
+nav.open {
+  background-color: $color-base;
+  box-shadow: 2px 2px 8px $color-default;
+}
+
+nav,
+nav.open {
+  position: relative;
+  top: 0;
+  width: 100%;
+  max-height: 7vh;
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 23px;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+  .hamburger {
+    animation-name: blur;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    .bar {
+      width: 28px;
+      height: 3px;
+      background-color: #fff;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  }
+
+  .nav-links {
+    opacity: 0;
+    animation-name: linksClose;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    transition: background-color 1s ease;
+  }
+  .nav-links.open {
+    display: flex;
+    height: 100vh;
+    background-color: $color-base;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    animation-name: links;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-duration: 0.6s;
+    transition: background-color 1s ease;
+  }
+  .nav-links.open li {
+    padding-bottom: 50px;
+    opacity: 1;
+  }
+  .nav-links.open a {
+    font-family: $font-primary;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  li.fade {
+    opacity: 1;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .contact {
+    box-shadow: unset;
+    border: unset;
+    border-color: transparent;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    top: 5vh;
+    min-height: 7vh;
+    .hamburger {
+      display: none;
+    }
+    .nav-links {
+      display: flex;
+      opacity: 1;
+      list-style: none;
+      margin-right: 2.8rem;
+      animation: none;
+    }
+    .nav-links li {
+      padding-left: 2.8rem;
+      opacity: 1;
+    }
+    .nav-links li a {
+      font-family: $font-primary;
+      color: #fff;
+      text-decoration: none;
+      text-shadow: 2px 2px 8px #111;
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: color 0.8s ease;
+      &:hover {
+        color: $color-base;
+      }
+    }
+    .nav-links .contact {
+      background: transparent;
+      border-radius: 19px;
+      border: 1px solid $color-basic;
+      padding: 10px;
+      color: $color-basic;
+      position: relative;
+      left: 25px;
+      transition: color 0.5s ease, background-color 0.6s ease-out;
+      &:hover {
+        background-color: $color-base;
+        color: $color-basic;
+        font-weight: 900;
+      }
+    }
+  }
+}
+

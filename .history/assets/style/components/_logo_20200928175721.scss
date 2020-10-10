@@ -1,0 +1,24 @@
+@import "../base/fonts";
+@import "../base/colors";
+
+#logo {
+  position: relative;
+  top: 7px;
+  font-family: $font-brand;
+  font-weight: lighter;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px #111;
+  margin-left: 15px;
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1000px){
+  #logo{
+    width: fit-content;
+    top: 0;
+  }
+}

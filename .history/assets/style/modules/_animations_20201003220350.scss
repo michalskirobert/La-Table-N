@@ -1,0 +1,130 @@
+@import "./../base/colors";
+
+@keyframes links {
+    0% {
+      width: 0%;
+      opacity: 0;
+    }
+    100%{
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes linksClose {
+    0% {
+      height: 100vh;
+      width: 100%;
+      opacity: 1;
+    }
+    100%{
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+  }
+
+
+@keyframes navOpen {
+    0%{
+      top: 60px;
+      opacity: 0;
+      background-color: transparent;
+    }
+    50%{
+      top: 30px;
+      opacity: 0.5;
+      background-color: $color-base;
+    }
+    100%{
+      top: 0px;
+      opacity: 1;
+      background-color: $color-base;
+    }
+  }
+
+  @keyframes arrow {
+    0% {
+      border-color: $color-base;
+      transform: translate(0,0);
+    }
+    20% {
+      border-color:$color-base;
+      transform: translate(15px,15px);
+    }
+    20.1%,
+    100% {
+      border-color: $color-secondary;
+    }
+  }
+
+
+  @keyframes scrollNext {
+    0% {
+      border-color: $color-primary;
+      transform: translate(0,0);
+    }
+    20% {
+      border-color: $color-primary;
+      transform: translate(10px,10px);
+    }
+    20.1%,
+    100% {
+      border-color: $color-secondary;
+    }
+  }
+
+  @keyframes logo {
+    0% {
+      letter-spacing: -0.5em;
+      transform: rotate(0deg);
+      filter: blur(12px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: rotate(20deg);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes firstPart {
+    from{
+      top: 15px;
+      opacity: 0;
+    }
+    to{
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes logoOpenImg{
+    from{
+      left: 100px;
+    }
+    to{
+      left: 64px;
+    }
+  }
+
+  @keyframes firstPartMobile {
+    from{
+      top: 15px;
+      opacity: 0;
+    }
+    to{
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes logoOpenImgMobile{
+    from{
+      left: 100px;
+    }
+    to{
+      left: 64px;
+    }
+  }

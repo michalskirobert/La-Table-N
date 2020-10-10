@@ -1,0 +1,37 @@
+@import "../base/fonts";
+@import "../base/colors";
+
+#logo {
+  position: relative;
+  top: 7px;
+  right: 5px;
+  font-family: $font-brand;
+  font-weight: lighter;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px #111;
+  margin-left: 15px;
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  flex-direction: column;
+  img{
+    position: absolute;
+    left: 45px;
+    top: -15px;
+    transform: rotate(20deg);
+  }
+  p:last-child{
+    position: relative;
+    left: 50px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #logo {
+    width: fit-content;
+    top: 0;
+    right: 40px;
+  }
+}

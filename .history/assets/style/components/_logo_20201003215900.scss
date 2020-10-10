@@ -1,0 +1,80 @@
+@import "../base/fonts";
+@import "../base/colors";
+
+#logo {
+  position: relative;
+  top: 7px;
+  right: 5px;
+  margin-left: 15px;
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  flex-direction: column;
+  img {
+    position: absolute;
+    left: 45px;
+    top: -2px;
+    transform: rotate(20deg);
+    width: 25px;
+  }
+  p {
+    font-family: $font-brand;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 2px 2px 8px #111;
+  }
+  p:last-child {
+    position: relative;
+    left: 17px;
+    text-shadow: 2px 2px 8px #111;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #logo {
+    width: fit-content;
+    top: 25px;
+    right: 40px;
+    img {
+      top: -10px;
+      left: 95px;
+      width: 50px;
+    }
+    p {
+      font-size: 2rem;
+    }
+    p:last-child {
+      position: relative;
+      left: 50px;
+    }
+  }
+  nav.open {
+    #logo {
+      width: fit-content;
+      top: 0;
+      right: 0;
+      p,
+      p:last-child {
+        font-size: 1.5rem;
+      }
+      img {
+        left: 64px;
+        width: 35px;
+        top: 0px;
+        animation-name: logoOpenImg;
+        animation-timing-function: linear;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        animation-direction: alternate;
+      }
+      p:last-child{
+       animation-name: firstPart;
+       animation-timing-function: linear;
+       animation-duration: .5s;
+       animation-fill-mode: forwards;
+       animation-direction: alternate;
+      }
+    }
+  }
+}

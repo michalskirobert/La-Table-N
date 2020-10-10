@@ -1,0 +1,24 @@
+@import "../base/fonts";
+@import "../base/colors";
+
+#logo {
+  position: relative;
+  top: 2px;
+  right: 5px;
+  margin-left: 15px;
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1000px) {
+  nav {
+    #logo {
+      width: fit-content;
+      top: 0;
+      right: 0;
+    }
+  }
+}

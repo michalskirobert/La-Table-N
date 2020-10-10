@@ -1,0 +1,12 @@
+@import "../base/fonts";
+@import "../base/colors";
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  flex-direction: column;
+  & > img{
+   width: 120px;
+  }
+}

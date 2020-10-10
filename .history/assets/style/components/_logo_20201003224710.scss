@@ -1,0 +1,14 @@
+@import "../base/fonts";
+@import "../base/colors";
+
+  #logo {
+    position: relative;
+    top: 2px;
+    right: 5px;
+    margin-left: 15px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    flex-direction: column;
+  }

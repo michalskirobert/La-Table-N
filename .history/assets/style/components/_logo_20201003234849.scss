@@ -1,0 +1,105 @@
+@import "../base/fonts";
+@import "../base/colors";
+
+#logo {
+  position: relative;
+  top: 2px;
+  right: 5px;
+  margin-left: 15px;
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  flex-direction: column;
+  img {
+    position: absolute;
+    left: 63px;
+    top: 0.5vh;
+    transform: rotate(20deg);
+    width: 25px;
+  }
+  p {
+    font-family: $font-brand;
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 3.5vh;
+    text-shadow: 2px 2px 8px #111;
+  }
+  p:last-child {
+    position: relative;
+    left: 17px;
+    text-shadow: 2px 2px 8px #111;
+  }
+}
+
+nav.open {
+  #logo {
+    animation-name: blur;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    img {
+      position: absolute;
+      left: 63px;
+      top: 0.5vh;
+      transform: rotate(20deg);
+      width: 25px;
+      animation-name: logoOpenImg;
+      animation-timing-function: linear;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
+    }
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #logo {
+    width: fit-content;
+    top: 25px;
+    height: 100%;
+    margin-right: 50px;
+    align-items: center;
+    img {
+      top: -10px;
+      left: 95px;
+      width: 40%;
+    }
+    p {
+      font-size: 2rem;
+    }
+    p:last-child {
+      position: relative;
+      left: 50px;
+    }
+  }
+  nav.open {
+    #logo {
+      width: fit-content;
+      top: 0;
+      right: 0;
+      p,
+      p:last-child {
+        font-size: 1.8rem;
+      }
+      img {
+        left: 64px;
+        width: 40%;
+        top: 6%;
+        animation-name: logoOpenImg;
+        animation-timing-function: linear;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-direction: alternate;
+      }
+      p:last-child {
+        animation-name: firstPart;
+        animation-timing-function: linear;
+        animation-duration: 0.5s;
+        animation-delay: 0.1s;
+        animation-fill-mode: forwards;
+        animation-direction: alternate;
+      }
+    }
+  }
+}

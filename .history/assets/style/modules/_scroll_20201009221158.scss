@@ -1,0 +1,26 @@
+.gallery.scroll {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 100%;
+  white-space: nowrap;
+  &> img{
+    padding-left: 15px;
+  }
+}
+
+@media screen and(min-width: 1000px) {
+  .gallery.scroll {
+    flex-wrap: wrap;
+    overflow: hidden;
+    &>img{
+      padding: 0 15px 30px 15px;
+    }
+  }
+}
+
+nav a[href="#landing"] ~ section#landing:hover{
+  color: red;
+}
