@@ -20,15 +20,15 @@ nav.open {
     border: none;
     outline: none;
     background-color: transparent;
-    &:hover > .bar{
-      background-color: $color-secondary;
-    }
     .bar {
       width: 28px;
       height: 3px;
       background-color: #fff;
       margin: 6px 0;
       transition: 0.4s;
+    }
+    .hamburger:hover > .bar{
+      background-color: $color-centaury;
     }
   }
 

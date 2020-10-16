@@ -21,8 +21,8 @@
   font-weight: 400;
 }
 
-h1:not(#logo),
-h2 {
+h2:not(.hide):not(#logo),
+h1 {
   color: $color-default;
   font-family: $font-primary;
   padding: 20px 0;
@@ -43,13 +43,6 @@ h2 {
 
 .hide{
   font-size: 35px;
-  font-family: $font-brand;
-  margin: 0 auto;
-  line-height: normal;
-  font-weight: 600;
-  text-align: center;
-  color: $color-basic;
-  padding: 0;
 }
 
 h3, h4, h5, h6{
