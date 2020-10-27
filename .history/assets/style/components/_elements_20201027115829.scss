@@ -15,10 +15,6 @@
   cursor: pointer;
 }
 
-.arrow__up {
-  z-index: 0;
-}
-
 .arrow__item {
   position: relative;
   width: 20px;
@@ -73,9 +69,6 @@
     max-width: 325px;
     border-radius: 50%;
     z-index: 0;
-    margin: 0 auto;
-  }
-  .box-half__intro {
     margin: 0 auto;
   }
 }

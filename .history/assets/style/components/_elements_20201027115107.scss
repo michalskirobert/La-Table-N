@@ -15,10 +15,6 @@
   cursor: pointer;
 }
 
-.arrow__up {
-  z-index: 0;
-}
-
 .arrow__item {
   position: relative;
   width: 20px;
@@ -64,19 +60,19 @@
   display: flex;
   flex-direction:  column;
   width: 100%;
-  align-items: center;
   & > img {
     display: flex;
     position: relative;
     top: 0;
     left: 0;
-    max-width: 325px;
+    max-width: 400px;
     border-radius: 50%;
     z-index: 0;
     margin: 0 auto;
   }
-  .box-half__intro {
+  & > p {
     margin: 0 auto;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1000px) {

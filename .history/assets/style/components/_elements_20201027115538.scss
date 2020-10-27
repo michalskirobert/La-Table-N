@@ -15,10 +15,6 @@
   cursor: pointer;
 }
 
-.arrow__up {
-  z-index: 0;
-}
-
 .arrow__item {
   position: relative;
   width: 20px;
@@ -64,7 +60,6 @@
   display: flex;
   flex-direction:  column;
   width: 100%;
-  align-items: center;
   & > img {
     display: flex;
     position: relative;
@@ -75,11 +70,12 @@
     z-index: 0;
     margin: 0 auto;
   }
-  .box-half__intro {
+  & > p {
     margin: 0 auto;
+    width: 100%;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   .box__half > img {
     left: 50px;
   }

@@ -1,4 +1,4 @@
-// const response = grecaptcha.getResponse();
+// var response = grecaptcha.getResponse();
 
 var successMsg =
   "メッセージが送信されました。 <br /> お問い合わせありがとうございます。 <br /> ご記入いただいたメールアドレス宛に、<br> 確認メールを送信しております。";
@@ -9,15 +9,16 @@ var failCaptcha =
 var captchaIssue =
   "キャプチャーに問題が発生しています。<br> レポート機能から、<br> こちらの内容の報告をお願い致します。";
 
+var emailValid = document.querySelector(".emailValid");
+var nameValid = document.querySelector(".nameValid");
+
 //contact form
 function sendMail() {
 
-  const emailValid = document.querySelector(".emailValid");
-  const nameValid = document.querySelector(".nameValid");
-  const email = document.querySelector("#email").value;
-  const name = document.querySelector("#name").value;
-  const msg = document.querySelector("#msg").value;
-  const page = document.querySelector("#pageTwo").value;
+  var email = document.querySelector("#email").value;
+  var name = document.querySelector("#name").value;
+  var msg = document.querySelector("#msg").value;
+  var page = document.querySelector("#pageTwo").value;
 
 
   if (name === "") {
@@ -46,13 +47,13 @@ function sendMail() {
 
   document.querySelector("#msg").style.border = "1px solid #52E5BA";
 
-  const formdata = new FormData();
+  var formdata = new FormData();
   formdata.append("email", email);
   formdata.append("name", name);
   formdata.append("message", msg);
   formdata.append("page", page);
 
-  const xhttp;
+  var xhttp;
   xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -73,21 +74,21 @@ function sendMail() {
 //Apply
 function sendApply() {
 
-  const email = document.querySelector("#applyMail").value;
-  const name = document.querySelector("#applyName").value;
-  const msg = document.querySelector("#message").value;
-  const page = document.querySelector("#page").value;
-  const date = document.querySelector("#applyDate").value;
-  const phone = document.querySelector("#phone").value;
-  const people = document.querySelector("#applyPeople").value;
-  const address = document.querySelector("#applyAddress").value;
-  const policy = document.querySelector("#policy").value;
-  const nameApplyValid = document.querySelector(".nameApplyValid");
-  const emailApplyValid = document.querySelector(".emailApplyValid");
-  const dateValid = document.querySelector(".dateValid");
-  const phoneValid = document.querySelector(".phoneValid");
-  const peopleValid = document.querySelector(".peopleValid");
-  const policyValid = document.querySelector(".policyValid");
+  var email = document.querySelector("#applyMail").value;
+  var name = document.querySelector("#applyName").value;
+  var msg = document.querySelector("#message").value;
+  var page = document.querySelector("#page").value;
+  var date = document.querySelector("#applyDate").value;
+  var phone = document.querySelector("#phone").value;
+  var people = document.querySelector("#applyPeople").value;
+  var address = document.querySelector("#applyAddress").value;
+  var policy = document.querySelector("#policy").value;
+  var nameApplyValid = document.querySelector(".nameApplyValid");
+  var emailApplyValid = document.querySelector(".emailApplyValid");
+  var dateValid = document.querySelector(".dateValid");
+  var phoneValid = document.querySelector(".phoneValid");
+  var peopleValid = document.querySelector(".peopleValid");
+  var policyValid = document.querySelector(".policyValid");
 
   if (name === "") {
     nameApplyValid.innerHTML = "お名前(必須) ✘";
@@ -165,7 +166,7 @@ function sendApply() {
   document.querySelector("#phone").style.border = "1px solid #52E5BA";
 
 
-  const formdata = new FormData();
+  var formdata = new FormData();
   formdata.append("email", email);
   formdata.append("name", name);
   formdata.append("message", msg);
@@ -176,7 +177,7 @@ function sendApply() {
   formdata.append("address", address);
   formdata.append("policy", policy);
 
-  const xhttp;
+  var xhttp;
   xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {

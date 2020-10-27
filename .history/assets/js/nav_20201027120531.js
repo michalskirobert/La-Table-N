@@ -1,6 +1,7 @@
 //scrolling api
 $(document.body).on("touchmove", onScroll); // for mobile
 $(window).on("scroll", onScroll);
+
 //headerSize
 
 var $contactLink = document.querySelector(".contact");
@@ -27,7 +28,6 @@ window.onscroll = function () {
     document.querySelector(".arrow__item").style.display = "none";
     arrow.style.display = "block";
     arrowBox.style.display = "block";
-    document.querySelector(".arrow__up").style.zIndex="2";
 
     document.querySelector(".arrow__up").setAttribute("href", "#landing");
   } else {
@@ -35,7 +35,6 @@ window.onscroll = function () {
     document.querySelector(".arrow__item").style.display = "block";
     arrow.style.display = "none";
     arrowBox.style.display = "none";
-    document.querySelector(".arrow__up").style.zIndex="0";
   }
 };
 

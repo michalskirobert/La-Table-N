@@ -1,6 +1,7 @@
 //scrolling api
 $(document.body).on("touchmove", onScroll); // for mobile
 $(window).on("scroll", onScroll);
+document.querySelector(".arrow__up").style.zIndex="0";
 //headerSize
 
 var $contactLink = document.querySelector(".contact");

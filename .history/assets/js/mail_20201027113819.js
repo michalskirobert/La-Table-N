@@ -1,12 +1,12 @@
 // const response = grecaptcha.getResponse();
 
-var successMsg =
+const successMsg =
   "メッセージが送信されました。 <br /> お問い合わせありがとうございます。 <br /> ご記入いただいたメールアドレス宛に、<br> 確認メールを送信しております。";
-var failMsg =
+const failMsg =
   "メールを送信できませんでした。<br /> 内容をご確認の上、<br> 再度お試し下さい。";
-var failCaptcha =
+const failCaptcha =
   "キャプチャーをご確認下さい。<br> ご確認いただけない場合は、<br> お客様のアカウントは <br> ロボットとみなします🤖";
-var captchaIssue =
+const captchaIssue =
   "キャプチャーに問題が発生しています。<br> レポート機能から、<br> こちらの内容の報告をお願い致します。";
 
 //contact form

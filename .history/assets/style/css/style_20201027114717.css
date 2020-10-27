@@ -1,17 +1,85 @@
 @charset "UTF-8";
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,8 +91,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -32,17 +109,21 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -54,51 +135,61 @@ table {
 /*Fonts displays*/
 /* noto-sans-jp-regular - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
+  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-500 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
+  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-700 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
+  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-900 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
+  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lustria-regular - latin */
 @font-face {
-  font-family: 'Lustria';
+  font-family: "Lustria";
   font-style: normal;
   font-weight: 400;
   display: swap;
-  src: local("Lustria"), local("Lustria-Regular"), url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"), url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
+  src: local("Lustria"), local("Lustria-Regular"),
+    url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"),
+    url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -114,7 +205,7 @@ table {
 .big-text {
   font-size: 4.5rem;
   font-family: "Lustria", fallback, sans-serif;
-  color: #FFF5F5;
+  color: #fff5f5;
   text-shadow: 2px 2px 8px #111;
   padding-bottom: 25px;
   text-align: center;
@@ -123,7 +214,7 @@ table {
 
 h1:not(#logo),
 h2 {
-  color: #2F2C23;
+  color: #2f2c23;
   font-family: "Noto Sans JP", fallback, sans-serif;
   padding: 20px 0;
   margin: 0 auto;
@@ -148,13 +239,16 @@ h2 {
   line-height: normal;
   font-weight: 600;
   text-align: center;
-  color: #FFF5F5;
+  color: #fff5f5;
   padding: 0;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   padding: 20px 0;
-  color: #2F2C23;
+  color: #2f2c23;
 }
 
 h3 {
@@ -177,23 +271,23 @@ p {
 }
 
 b {
-  color: #2F2C23;
+  color: #2f2c23;
   font-weight: 700;
 }
 
 strong {
-  color: #2F2C23;
+  color: #2f2c23;
   font-weight: 900;
 }
 
 a {
-  color: #BD8182;
+  color: #bd8182;
   font-weight: 700;
   transition: color 0.8s ease;
 }
 
 a:hover {
-  color: #FF8E93;
+  color: #ff8e93;
   font-weight: 800;
 }
 
@@ -221,7 +315,7 @@ a:hover {
 #contact p,
 #contact b,
 #contact strong {
-  color: #FFF5F5;
+  color: #fff5f5;
   text-shadow: 2px 2px 8px #111;
 }
 
@@ -246,7 +340,7 @@ a:hover {
 .big-content__item .big-content {
   font-size: 1.2rem;
   font-family: "Noto Sans JP", fallback, sans-serif;
-  color: #FFF5F5;
+  color: #fff5f5;
   text-align: center;
   text-shadow: 2px 2px 8px #111;
   font-weight: 500;
@@ -255,62 +349,72 @@ a:hover {
 span:lang(fr) {
   font-family: "Lustria", fallback, sans-serif;
   font-size: 1.5rem;
-  color: #FFF5F5;
+  color: #fff5f5;
 }
 
 /*Fonts displays*/
 /* noto-sans-jp-regular - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
+  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-500 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
+  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-700 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
+  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-900 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
+  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lustria-regular - latin */
 @font-face {
-  font-family: 'Lustria';
+  font-family: "Lustria";
   font-style: normal;
   font-weight: 400;
   display: swap;
-  src: local("Lustria"), local("Lustria-Regular"), url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"), url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
+  src: local("Lustria"), local("Lustria-Regular"),
+    url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"),
+    url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 footer {
-  background-color: #2F2C23;
+  background-color: #2f2c23;
   width: 100vw;
   height: 100%;
 }
@@ -327,51 +431,61 @@ header {
 /*Fonts displays*/
 /* noto-sans-jp-regular - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
+  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-500 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
+  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-700 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
+  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-900 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
+  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lustria-regular - latin */
 @font-face {
-  font-family: 'Lustria';
+  font-family: "Lustria";
   font-style: normal;
   font-weight: 400;
   display: swap;
-  src: local("Lustria"), local("Lustria-Regular"), url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"), url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
+  src: local("Lustria"), local("Lustria-Regular"),
+    url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"),
+    url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -392,7 +506,7 @@ header {
   width: 44%;
   margin: 0 auto;
   transform: translate(-5%, 25%);
-  transition: transform .8s ease;
+  transition: transform 0.8s ease;
   animation: opacityForImg 1s forwards alternate ease;
 }
 
@@ -405,51 +519,61 @@ header {
 /*Fonts displays*/
 /* noto-sans-jp-regular - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
+  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-500 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
+  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-700 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
+  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-900 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
+  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lustria-regular - latin */
 @font-face {
-  font-family: 'Lustria';
+  font-family: "Lustria";
   font-style: normal;
   font-weight: 400;
   display: swap;
-  src: local("Lustria"), local("Lustria-Regular"), url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"), url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
+  src: local("Lustria"), local("Lustria-Regular"),
+    url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"),
+    url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -476,7 +600,7 @@ header {
 }
 
 .intro {
-  background: #2F2C23;
+  background: #2f2c23;
   position: fixed;
   top: 0;
   left: 0;
@@ -488,7 +612,7 @@ header {
 }
 
 .slider {
-  background: #BD8182;
+  background: #bd8182;
   position: fixed;
   top: 0;
   left: 0;
@@ -498,14 +622,14 @@ header {
 }
 
 .intro-text {
-  color: #FFF5F5;
+  color: #fff5f5;
   font-family: "Heebo", sans-serif;
   font-size: 3rem;
   z-index: 5;
 }
 
 .hide {
-  background: #2F2C23;
+  background: #2f2c23;
   overflow: hidden;
 }
 
@@ -536,7 +660,7 @@ article {
 }
 
 .container__content {
-  box-shadow: 0 0 5px #2F2C23;
+  box-shadow: 0 0 5px #2f2c23;
   padding: 15px;
   height: 100%;
 }
@@ -599,7 +723,7 @@ article {
   padding: 0 3px 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .box-half__container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -642,51 +766,61 @@ article {
 /*Fonts displays*/
 /* noto-sans-jp-regular - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
+  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-500 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
+  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-700 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
+  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-900 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
+  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lustria-regular - latin */
 @font-face {
-  font-family: 'Lustria';
+  font-family: "Lustria";
   font-style: normal;
   font-weight: 400;
   display: swap;
-  src: local("Lustria"), local("Lustria-Regular"), url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"), url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
+  src: local("Lustria"), local("Lustria-Regular"),
+    url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"),
+    url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -698,7 +832,7 @@ nav.open {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   transition: background-color 0.5s ease;
-  box-shadow: 0 0 6px #2F2C23;
+  box-shadow: 0 0 6px #2f2c23;
 }
 
 nav .hamburger,
@@ -743,7 +877,7 @@ nav .nav-links.open,
 nav.open .nav-links.open {
   display: flex;
   height: 100vh;
-  background-color: #FF8E93;
+  background-color: #ff8e93;
   position: fixed;
   flex-direction: column;
   top: 0;
@@ -791,7 +925,7 @@ nav.open .contact {
 }
 
 nav.open {
-  background-color: #FF8E93 !important;
+  background-color: #ff8e93 !important;
   transition: background-color 0.8s ease-in-out;
 }
 
@@ -832,7 +966,8 @@ nav.open {
     font-weight: 600;
     transition: border-color 0.5s ease;
   }
-  nav .nav-links li a:hover, nav .nav-links li a:focus,
+  nav .nav-links li a:hover,
+  nav .nav-links li a:focus,
   nav.open .nav-links li a:hover,
   nav.open .nav-links li a:focus {
     font-weight: 600;
@@ -849,15 +984,11 @@ nav.open {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  border: 2px solid #FF8E93;
+  border: 2px solid #ff8e93;
   background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 5px #2F2C23;
+  box-shadow: 0 0 5px #2f2c23;
   z-index: 1;
   cursor: pointer;
-}
-
-.arrow__up {
-  z-index: 0;
 }
 
 .arrow__item {
@@ -886,8 +1017,8 @@ nav.open {
   width: 100%;
   height: 100%;
   border: none;
-  border-right: 3px solid #FF8E93;
-  border-bottom: 3px solid #FF8E93;
+  border-right: 3px solid #ff8e93;
+  border-bottom: 3px solid #ff8e93;
   animation: arrow 1s linear infinite;
 }
 
@@ -903,36 +1034,8 @@ nav.open {
   animation-delay: 0.1s;
 }
 
-.box__half {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-
-.box__half > img {
-  display: flex;
-  position: relative;
-  top: 0;
-  left: 0;
-  max-width: 325px;
-  border-radius: 50%;
-  z-index: 0;
-  margin: 0 auto;
-}
-
-.box__half .box-half__intro {
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 1000px) {
-  .box__half > img {
-    left: 50px;
-  }
-}
-
 .req {
-  color: #FFF5F5;
+  color: #fff5f5;
   font-size: 10px;
 }
 
@@ -969,8 +1072,8 @@ nav.open {
   width: 100%;
   height: 100%;
   border: none;
-  border-right: 3px solid #FF8E93;
-  border-bottom: 3px solid #FF8E93;
+  border-right: 3px solid #ff8e93;
+  border-bottom: 3px solid #ff8e93;
   animation: scrollNext 1s linear infinite;
 }
 
@@ -997,8 +1100,8 @@ nav.open {
   width: 100%;
   height: 100%;
   border: none;
-  border-right: 3px solid #FF8E93;
-  border-bottom: 3px solid #FF8E93;
+  border-right: 3px solid #ff8e93;
+  border-bottom: 3px solid #ff8e93;
   animation: scrollNext 1s linear infinite;
 }
 
@@ -1009,7 +1112,7 @@ nav.open {
 }
 
 .social-media img {
-  transition: opacity .8s ease;
+  transition: opacity 0.8s ease;
 }
 
 .social-media img:hover {
@@ -1018,7 +1121,8 @@ nav.open {
 }
 
 .landing {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../../images/hero/header-banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../images/hero/header-banner.jpg");
   padding: 0rem 5rem;
 }
 
@@ -1033,11 +1137,13 @@ nav.open {
 }
 
 #about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../../images/hero/header-banner-3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../images/hero/header-banner-3.jpg");
 }
 
 #contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../../images/hero/header-banner-4.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../images/hero/header-banner-4.jpg");
 }
 
 @media screen and (max-width: 600px), (max-width: 1000px) {
@@ -1059,51 +1165,61 @@ nav.open {
 /*Fonts displays*/
 /* noto-sans-jp-regular - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
+  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-500 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
+  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-700 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
+  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-900 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
+  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lustria-regular - latin */
 @font-face {
-  font-family: 'Lustria';
+  font-family: "Lustria";
   font-style: normal;
   font-weight: 400;
   display: swap;
-  src: local("Lustria"), local("Lustria-Regular"), url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"), url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
+  src: local("Lustria"), local("Lustria-Regular"),
+    url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"),
+    url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -1116,7 +1232,7 @@ nav.open {
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   padding: 0 0 40px;
   border-radius: 3px;
-  color: #2F2C23;
+  color: #2f2c23;
   flex-direction: column;
   display: flex;
 }
@@ -1125,7 +1241,7 @@ nav.open {
 #contact form h3 {
   font-family: "Lustria", fallback, sans-serif;
   max-width: 100%;
-  background: #FF8E93;
+  background: #ff8e93;
   padding: 20px;
   color: white;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
@@ -1137,7 +1253,8 @@ nav.open {
 #contact form input::-webkit-input-placeholder,
 #contact form textarea::-webkit-input-placeholder {
   font: inherit;
-  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
 }
 
 #apply form input,
@@ -1151,8 +1268,12 @@ nav.open {
   display: block;
   border: none;
   padding: 20px 0 10px;
-  border-bottom: solid 1px #FF8E93;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #FF8E93 4%);
+  border-bottom: solid 1px #ff8e93;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 96%,
+    #ff8e93 4%
+  );
   background-position: -400px 0;
   background-size: 400px 100%;
   background-repeat: no-repeat;
@@ -1165,7 +1286,7 @@ nav.open {
 #apply form textarea:focus::-webkit-input-placeholder,
 #contact form input:focus::-webkit-input-placeholder,
 #contact form textarea:focus::-webkit-input-placeholder {
-  color: #FF8E93;
+  color: #ff8e93;
 }
 
 #apply form input:focus,
@@ -1176,68 +1297,109 @@ nav.open {
 #contact form input:valid #apply form input:optional,
 #contact form textarea:focus,
 #contact form textarea:valid #apply form input:optional,
-#apply form input:valid
-#apply form textarea:optional,
-#apply form textarea:valid
-#apply form textarea:optional,
-#contact form input:valid
-#apply form textarea:optional,
-#contact form textarea:valid
-#apply form textarea:optional,
-#apply form input:valid
-#contact form input:optional,
-#apply form textarea:valid
-#contact form input:optional,
-#contact form input:valid
-#contact form input:optional,
-#contact form textarea:valid
-#contact form input:optional,
-#apply form input:valid
-#contact form textarea:optional,
-#apply form textarea:valid
-#contact form textarea:optional,
-#contact form input:valid
-#contact form textarea:optional,
-#contact form textarea:valid
-#contact form textarea:optional {
+#apply form input:valid #apply form textarea:optional,
+#apply form textarea:valid #apply form textarea:optional,
+#contact form input:valid #apply form textarea:optional,
+#contact form textarea:valid #apply form textarea:optional,
+#apply form input:valid #contact form input:optional,
+#apply form textarea:valid #contact form input:optional,
+#contact form input:valid #contact form input:optional,
+#contact form textarea:valid #contact form input:optional,
+#apply form input:valid #contact form textarea:optional,
+#apply form textarea:valid #contact form textarea:optional,
+#contact form input:valid #contact form textarea:optional,
+#contact form textarea:valid #contact form textarea:optional {
   box-shadow: none;
   outline: none;
   background-position: 0 0;
-  color: #2F2C23;
+  color: #2f2c23;
 }
 
 #apply form input:focus::-webkit-input-placeholder,
 #apply form input:valid #apply form input:optional::-webkit-input-placeholder,
 #apply form textarea:focus::-webkit-input-placeholder,
-#apply form textarea:valid #apply form input:optional::-webkit-input-placeholder,
+#apply
+  form
+  textarea:valid
+  #apply
+  form
+  input:optional::-webkit-input-placeholder,
 #contact form input:focus::-webkit-input-placeholder,
 #contact form input:valid #apply form input:optional::-webkit-input-placeholder,
 #contact form textarea:focus::-webkit-input-placeholder,
-#contact form textarea:valid #apply form input:optional::-webkit-input-placeholder,
-#apply form input:valid
-#apply form textarea:optional::-webkit-input-placeholder,
-#apply form textarea:valid
-#apply form textarea:optional::-webkit-input-placeholder,
-#contact form input:valid
-#apply form textarea:optional::-webkit-input-placeholder,
-#contact form textarea:valid
-#apply form textarea:optional::-webkit-input-placeholder,
-#apply form input:valid
-#contact form input:optional::-webkit-input-placeholder,
-#apply form textarea:valid
-#contact form input:optional::-webkit-input-placeholder,
-#contact form input:valid
-#contact form input:optional::-webkit-input-placeholder,
-#contact form textarea:valid
-#contact form input:optional::-webkit-input-placeholder,
-#apply form input:valid
-#contact form textarea:optional::-webkit-input-placeholder,
-#apply form textarea:valid
-#contact form textarea:optional::-webkit-input-placeholder,
-#contact form input:valid
-#contact form textarea:optional::-webkit-input-placeholder,
-#contact form textarea:valid
-#contact form textarea:optional::-webkit-input-placeholder {
+#contact
+  form
+  textarea:valid
+  #apply
+  form
+  input:optional::-webkit-input-placeholder,
+#apply
+  form
+  input:valid
+  #apply
+  form
+  textarea:optional::-webkit-input-placeholder,
+#apply
+  form
+  textarea:valid
+  #apply
+  form
+  textarea:optional::-webkit-input-placeholder,
+#contact
+  form
+  input:valid
+  #apply
+  form
+  textarea:optional::-webkit-input-placeholder,
+#contact
+  form
+  textarea:valid
+  #apply
+  form
+  textarea:optional::-webkit-input-placeholder,
+#apply form input:valid #contact form input:optional::-webkit-input-placeholder,
+#apply
+  form
+  textarea:valid
+  #contact
+  form
+  input:optional::-webkit-input-placeholder,
+#contact
+  form
+  input:valid
+  #contact
+  form
+  input:optional::-webkit-input-placeholder,
+#contact
+  form
+  textarea:valid
+  #contact
+  form
+  input:optional::-webkit-input-placeholder,
+#apply
+  form
+  input:valid
+  #contact
+  form
+  textarea:optional::-webkit-input-placeholder,
+#apply
+  form
+  textarea:valid
+  #contact
+  form
+  textarea:optional::-webkit-input-placeholder,
+#contact
+  form
+  input:valid
+  #contact
+  form
+  textarea:optional::-webkit-input-placeholder,
+#contact
+  form
+  textarea:valid
+  #contact
+  form
+  textarea:optional::-webkit-input-placeholder {
   font-size: 0.8em;
   transform: translateY(-20px);
   visibility: visible !important;
@@ -1251,7 +1413,11 @@ nav.open {
 
 #apply form input[type="email"],
 #contact form input[type="email"] {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #FF8E93 4%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 96%,
+    #ff8e93 4%
+  );
   background-position: -400px 0;
   background-repeat: no-repeat;
   transition: border-bottom 0.3s ease, background-color 0.3s ease;
@@ -1278,13 +1444,21 @@ nav.open {
   opacity: 1;
 }
 
-#apply form input[type="email"]:not([value=""]):focus::-webkit-input-placeholder,
-#contact form input[type="email"]:not([value=""]):focus::-webkit-input-placeholder {
-  color: #FF8E93;
+#apply
+  form
+  input[type="email"]:not([value=""]):focus::-webkit-input-placeholder,
+#contact
+  form
+  input[type="email"]:not([value=""]):focus::-webkit-input-placeholder {
+  color: #ff8e93;
 }
 
-#apply form input[type="email"]:not([value=""]):focus:not(:valid)::-webkit-input-placeholder,
-#contact form input[type="email"]:not([value=""]):focus:not(:valid)::-webkit-input-placeholder {
+#apply
+  form
+  input[type="email"]:not([value=""]):focus:not(:valid)::-webkit-input-placeholder,
+#contact
+  form
+  input[type="email"]:not([value=""]):focus:not(:valid)::-webkit-input-placeholder {
   color: #e91e63;
 }
 
@@ -1296,23 +1470,41 @@ nav.open {
 #apply form input[type="email"]:focus:not(:valid):not([value=""]),
 #contact form input[type="email"]:focus:not(:valid):not([value=""]) {
   border-bottom: solid 1px #e91e63;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #e91e63 4%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 96%,
+    #e91e63 4%
+  );
 }
 
 #apply form input[type="email"]:not(:focus):not(:valid):not([value=""]),
 #contact form input[type="email"]:not(:focus):not(:valid):not([value=""]) {
   border-bottom: solid 1px #e91e63;
   background-position: 0 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #e91e63 4%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 96%,
+    #e91e63 4%
+  );
 }
 
-#apply form input[type="email"]:not(:focus):not(:valid):not([value=""])::-webkit-input-placeholder,
-#contact form input[type="email"]:not(:focus):not(:valid):not([value=""])::-webkit-input-placeholder {
+#apply
+  form
+  input[type="email"]:not(:focus):not(:valid):not([value=""])::-webkit-input-placeholder,
+#contact
+  form
+  input[type="email"]:not(:focus):not(:valid):not([value=""])::-webkit-input-placeholder {
   color: #e91e63;
 }
 
-#apply form input[type="email"]:not(:focus):not(:valid):not([value=""]) ~ span.validation-text,
-#contact form input[type="email"]:not(:focus):not(:valid):not([value=""]) ~ span.validation-text {
+#apply
+  form
+  input[type="email"]:not(:focus):not(:valid):not([value=""])
+  ~ span.validation-text,
+#contact
+  form
+  input[type="email"]:not(:focus):not(:valid):not([value=""])
+  ~ span.validation-text {
   visibility: visible;
   color: #e91e63;
 }
@@ -1331,9 +1523,10 @@ nav.open {
 #apply form button,
 #contact form button {
   font-family: "Noto Sans JP", fallback, sans-serif;
-  transition: transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), box-shadow 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1),
+    box-shadow 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
   border: none;
-  background: #FF8E93;
+  background: #ff8e93;
   cursor: pointer;
   border-radius: 3px;
   padding: 6px;
@@ -1377,7 +1570,7 @@ nav.open {
 #apply form .policyCheck label,
 #contact form .policyCheck label {
   font-family: "Noto Sans JP", fallback, sans-serif;
-  color: #2F2C23;
+  color: #2f2c23;
   font-size: 13px;
   font-weight: 600;
   flex-basis: 80%;
@@ -1398,67 +1591,77 @@ nav.open {
 }
 
 #contact form {
-  background: #FFF5F5;
+  background: #fff5f5;
 }
 
 #contact form textarea,
 #contact form input {
-  border-bottom: 1px solid #2F2C23;
-  color: #2F2C23;
+  border-bottom: 1px solid #2f2c23;
+  color: #2f2c23;
 }
 
 #contact form textarea:focus {
-  color: #2F2C23;
+  color: #2f2c23;
 }
 
 /*Fonts displays*/
 /* noto-sans-jp-regular - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
+  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-500 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
+  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-700 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
+  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* noto-sans-jp-900 - japanese */
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"), url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
+  src: local("Noto Sans Japanese Black"), local("NotoSansJapanese-Black"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff2") format("woff2"),
+    url("./../fonts/noto-sans-jp-v27-japanese-900.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lustria-regular - latin */
 @font-face {
-  font-family: 'Lustria';
+  font-family: "Lustria";
   font-style: normal;
   font-weight: 400;
   display: swap;
-  src: local("Lustria"), local("Lustria-Regular"), url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"), url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
+  src: local("Lustria"), local("Lustria-Regular"),
+    url("./../fonts/lustria-v8-latin-regular.woff2") format("woff2"),
+    url("./../fonts/lustria-v8-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -1480,12 +1683,12 @@ nav.open {
 #errorApply {
   background: #e91e63;
   border: 1px solid red;
-  color: #FFF5F5;
+  color: #fff5f5;
 }
 
 #sent,
 #sentApply {
-  background: #52E5BA;
+  background: #52e5ba;
   border: 1px solid green;
   color: green;
 }
@@ -1548,22 +1751,22 @@ nav.open {
   50% {
     top: 30px;
     opacity: 0.5;
-    background-color: #FF8E93;
+    background-color: #ff8e93;
   }
   100% {
     top: 0px;
     opacity: 1;
-    background-color: #FF8E93;
+    background-color: #ff8e93;
   }
 }
 
 @keyframes arrow {
   0% {
-    border-color: #FF8E93;
+    border-color: #ff8e93;
     transform: translate(0, 0);
   }
   20% {
-    border-color: #FF8E93;
+    border-color: #ff8e93;
     transform: translate(15px, 15px);
   }
   20.1%,
@@ -1574,11 +1777,11 @@ nav.open {
 
 @keyframes scrollNext {
   0% {
-    border-color: #BD8182;
+    border-color: #bd8182;
     transform: translate(0, 0);
   }
   20% {
-    border-color: #BD8182;
+    border-color: #bd8182;
     transform: translate(10px, 10px);
   }
   20.1%,

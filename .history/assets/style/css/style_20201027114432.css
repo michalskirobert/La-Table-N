@@ -599,7 +599,7 @@ article {
   padding: 0 3px 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .box-half__container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -856,10 +856,6 @@ nav.open {
   cursor: pointer;
 }
 
-.arrow__up {
-  z-index: 0;
-}
-
 .arrow__item {
   position: relative;
   width: 20px;
@@ -903,29 +899,18 @@ nav.open {
   animation-delay: 0.1s;
 }
 
-.box__half {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-
 .box__half > img {
   display: flex;
   position: relative;
   top: 0;
   left: 0;
-  max-width: 325px;
+  max-width: 400px;
   border-radius: 50%;
   z-index: 0;
   margin: 0 auto;
 }
 
-.box__half .box-half__intro {
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px){
   .box__half > img {
     left: 50px;
   }
@@ -1137,7 +1122,8 @@ nav.open {
 #contact form input::-webkit-input-placeholder,
 #contact form textarea::-webkit-input-placeholder {
   font: inherit;
-  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out,
+ visibility 0.3s ease-in-out;
 }
 
 #apply form input,
